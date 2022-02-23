@@ -1,14 +1,58 @@
 body {
+    width: 1728px;
+    height: 5391px;
     margin: 0;
-    background: #F3F5F7;
+    background: #f4f5f7;
+    align-items: center;
+    justify-content: center;
     font-family: 'Poppins' , sans-serif;
     font-weight: 400;
 }
+
+h1 {
+    color: #424B5A;
+    font-size: 60px;
+    margin: 400px;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns:1000px;
+    grid-template-rows: 1000px, 1000px, 1000px;
+    grid-template-areas: "image" "text";
+
+    font-family: poppins;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px, 5px, 15px rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.card-image {
+    grid-area: image;
+}
+
+.card-text {
+    grid-area: text;
+}
+
+
+.round {
+    background-color: #739dd3;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 115px;
+}
+
 
 .container {
     width: 70%;
     margin: 0 auto;
 }
+
 
 header {
     background: #ffffff;
@@ -70,6 +114,16 @@ nav a:hover::before {
     width: 100%;
 }
 
+.button {
+    background-color: #424B5A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 *{
     padding: 0;
